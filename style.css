@@ -82,3 +82,60 @@ body {
     background: #ff9393;
     color: #222;
 }
+/* ... your existing CSS ... */
+
+footer {
+    background-color: #333;
+    color: #eee;
+    padding: 20px 0;
+    text-align: center;
+    position: relative; /* For potential absolute positioning of elements within */
+    bottom: 0;
+    width: 100%; /* Make it full width */
+}
+
+.footer-content {
+    max-width: 960px; /* Match or slightly exceed the app's max-width */
+    margin: 0 auto;
+    padding: 0 20px; /* Add some side padding */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    display: flex;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: #eee;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #bbb;
+}
+
+/* Optional: Add a subtle top border to separate the footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+}
+
+.app {
+    /* ... your existing app styles ... */
+    flex-grow: 1; /* Allow the app to take up available vertical space */
+}
+
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+}
